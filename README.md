@@ -44,7 +44,7 @@ Download the model from the official Hugging Face repository: [Qwen/Qwen3-4B](ht
 
 Enable local LLM path ranking with:
 
-    python test_ranking.py --dataset FB237_v2 --experiment_name peral_fb_v2 --use_llm_path_filter --llm_path_local_model /path/to/model
+    python test_ranking.py --dataset FB237_v2_ind --experiment_name peral_fb_v2 --use_llm_path_filter --llm_path_local_model /path/to/model
 
 
 
