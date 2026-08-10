@@ -1,0 +1,10 @@
+﻿torch
+numpy
+scipy
+scikit-learn
+networkx
+dgl
+lmdb
+tqdm
+transformers
+accelerate
