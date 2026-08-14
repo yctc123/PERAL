@@ -1,4 +1,4 @@
-# peral
+# PEARL
 
 This repository contains a cleaned implementation for training and ranking evaluation on inductive knowledge graph completion datasets. It includes the core graph model, subgraph extraction pipeline, optional LLM-based multi-hop path ranking, and a single evaluation entry point.
 
@@ -30,7 +30,7 @@ For LLM path ranking, place entity2text.txt and relation2text.txt in the dataset
 
 ## Training
 
-    python train.py --dataset FB237_v2 --experiment_name peral_fb_v2 --hop 2
+    python train.py --dataset FB237_v2 --experiment_name pearl_fb_v2 --hop 2
 
 Training outputs are written to experiments/<experiment_name>/. The ranking script expects best_graph_classifier.pth in that directory.
 
@@ -40,11 +40,11 @@ Download the model from the official Hugging Face repository: [Qwen/Qwen3-4B](ht
 
 ## Ranking evaluation
 
-    python test_ranking.py --dataset FB237_v2 --experiment_name peral_fb_v2 --mode sample
+    python test_ranking.py --dataset FB237_v2 --experiment_name pearl_fb_v2 --mode sample
 
 Enable local LLM path ranking with:
 
-    python test_ranking.py --dataset FB237_v2_ind --experiment_name peral_fb_v2 --use_llm_path_filter --llm_path_local_model /path/to/model
+    python test_ranking.py --dataset FB237_v2_ind --experiment_name pearl_fb_v2 --use_llm_path_filter --llm_path_local_model /path/to/model
 
 
 
